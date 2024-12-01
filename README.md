@@ -4,7 +4,7 @@
 This is a Java-based application that demonstrates JSON serialization/deserialization and report generation for an `EmailRequest` object. The application:
 
 1. Creates an `EmailRequest` object.
-2. Serializes it into a JSON file (`emailRequest.json`).
+2. Serializes it into a JSON file (`emailRequests.json`).
 3. Deserializes the JSON back into an `EmailRequest` object.
 4. Prints the details of the `EmailRequest` in the terminal.
 
@@ -85,7 +85,7 @@ email-handler/
 │   │   │   └── com/
 │   │   │       └── example/
 │   │   │           ├── App.java          # Main entry point
-│   │   │           ├── EmailRequest.java # EmailRequest class definition
+│   │   │           ├── EmailRequests.java # EmailRequest class definition
 │   │   │           ├── JsonWriter.java   # JSON serialization logic
 │   │   │           ├── JsonReader.java   # JSON deserialization logic
 ├── target/                                # Compiled classes and build artifacts
@@ -104,7 +104,7 @@ Defines the `EmailRequest` object with the following fields:
 - `body`: The body content of the email.
 
 ### 2. `JsonWriter`
-Handles JSON serialization, converting an `EmailRequest` object into a `emailRequest.json` file.
+Handles JSON serialization, converting an `EmailRequest` object into a `emailRequests.json` file.
 
 ### 3. `JsonReader`
 Handles JSON deserialization, converting the `emailRequest.json` file back into an `EmailRequest` object.
@@ -135,20 +135,4 @@ This project uses the following Maven dependencies:
 
 ---
 
-## Extending the Project
-
-1. **HTML Report Generation**:
-   - Add a feature to generate an HTML report of the `EmailRequest`.
-
-2. **Dynamic Input**:
-   - Modify the application to accept user input for `EmailRequest` details.
-
-3. **Testing**:
-   - Add unit tests using JUnit to validate JSON serialization and deserialization.
-
----
-
-## License
-
-This project is licensed under the MIT License.
 

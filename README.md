@@ -10,27 +10,6 @@ This is a Java-based application that demonstrates JSON serialization/deserializ
 
 ---
 
-## Features
-
-- **JSON Serialization**: Converts an `EmailRequest` object into a JSON object in JSON file.
-- **JSON Deserialization**: Reads the JSON file and converts object back into an `EmailRequest` object.
-- **Terminal Output**: Displays the details of the `EmailRequest` in a clean format.
-
----
-
-## Prerequisites
-
-- **Java**: Ensure Java (JDK 11 or later) is installed.
-  ```bash
-  java -version
-  ```
-- **Maven**: Ensure Maven is installed for managing dependencies and building the project.
-  ```bash
-  mvn -version
-  ```
-
----
-
 ## Usage
 
 ### Running the Application
@@ -60,26 +39,6 @@ Body: This is a test email.
 
 ---
 
-## Project Structure
-
-```
-email-handler/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           ├── App.java          # Main entry point
-│   │   │           ├── EmailRequest.java # EmailRequest class definition
-│   │   │           ├── JsonWriter.java   # JSON serialization logic
-│   │   │           ├── JsonReader.java   # JSON deserialization logic
-├── target/                                # Compiled classes and build artifacts
-├── pom.xml                                # Maven configuration file
-└── README.md                              # Project instructions (this file)
-```
-
----
-
 ## Classes
 
 ### 1. `EmailRequest`
@@ -97,28 +56,6 @@ Handles JSON deserialization, converting the `emailRequests.json` file back into
 ### 4. `App`
 The main entry point. Orchestrates the serialization, deserialization, and terminal output.
 
----
-
-## Dependencies
-
-This project uses the following Maven dependencies:
-
-```xml
-<dependencies>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.13.2</version>
-        <scope>test</scope>
-    </dependency>
-    <!-- Jackson Core -->
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.13.3</version>
-    </dependency>
-</dependencies>
-```
 
 ---
 

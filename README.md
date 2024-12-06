@@ -12,8 +12,8 @@ This is a Java-based application that demonstrates JSON serialization/deserializ
 
 ## Features
 
-- **JSON Serialization**: Converts an `EmailRequest` object into a JSON file.
-- **JSON Deserialization**: Reads the JSON file and converts it back into an `EmailRequest` object.
+- **JSON Serialization**: Converts an `EmailRequest` object into a JSON object in JSON file.
+- **JSON Deserialization**: Reads the JSON file and converts object back into an `EmailRequest` object.
 - **Terminal Output**: Displays the details of the `EmailRequest` in a clean format.
 
 ---
@@ -70,7 +70,7 @@ email-handler/
 │   │   │   └── com/
 │   │   │       └── example/
 │   │   │           ├── App.java          # Main entry point
-│   │   │           ├── EmailRequests.java # EmailRequest class definition
+│   │   │           ├── EmailRequest.java # EmailRequest class definition
 │   │   │           ├── JsonWriter.java   # JSON serialization logic
 │   │   │           ├── JsonReader.java   # JSON deserialization logic
 ├── target/                                # Compiled classes and build artifacts
@@ -92,7 +92,7 @@ Defines the `EmailRequest` object with the following fields:
 Handles JSON serialization, converting an `EmailRequest` object into a `emailRequests.json` file.
 
 ### 3. `JsonReader`
-Handles JSON deserialization, converting the `emailRequest.json` file back into an `EmailRequest` object.
+Handles JSON deserialization, converting the `emailRequests.json` file back into an `EmailRequest` object (or multiple ones).
 
 ### 4. `App`
 The main entry point. Orchestrates the serialization, deserialization, and terminal output.

@@ -31,21 +31,6 @@ This is a Java-based application that demonstrates JSON serialization/deserializ
 
 ---
 
-## Installation
-
-1. Clone this repository or download the source code.
-   ```bash
-   git clone https://github.com/your-repository/email-handler.git
-   cd email-handler
-   ```
-
-2. Build the project using Maven.
-   ```bash
-   mvn clean install
-   ```
-
----
-
 ## Usage
 
 ### Running the Application
